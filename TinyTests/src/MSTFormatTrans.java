@@ -87,7 +87,7 @@ public class MSTFormatTrans {
 //		ts.RewriteFile("b100_chgthre_047.conll", "b100.conll", "b100_chgthre_047_chgformat.conll");
 //		ts.RewriteFile("c100_chgthre_047.conll", "c100.conll", "c100_chgthre_047_chgformat.conll");
 //		ts.RewriteFile("wsj_00_filter.conll", "wsj_00_stanfordout.conll", "wsj_00_filter_chgformat.conll");
-		String goldfileString=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00_01.conll";
+		String goldfileString=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00-01.conll";
 //		String mstfile1String=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"mst_51"+File.separator+"mst_2order_wsj2-21_proj_iter10_51_parseout.txt";
 //		String mstfile2String=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"mst_51"+File.separator+"mst_2order_wsj2-21_nonproj_iter10_51_parseout.txt";
 //		String mstfile3String=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"mst_51"+File.separator+"mst_1order_wsj2-21_proj_iter10_51_parseout.txt";
@@ -100,8 +100,8 @@ public class MSTFormatTrans {
 //		ts.RewriteFile(mstfile2String, goldfileString, mstfile2Stringnew);
 //		ts.RewriteFile(mstfile3String, goldfileString, mstfile3Stringnew);
 //		ts.RewriteFile(mstfile4String, goldfileString, mstfile4Stringnew);
-		String beanfile=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"bean_wsj_2-21_10iter_parseout.txt";
-		String beanfilenew=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"bean_wsj_2-21_10iter_parseout_chgformat.txt";
+		String beanfile=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"bean_wsj_2-21_10iter_avoidcircle_parseout.txt";
+		String beanfilenew=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"bean_wsj_2-21_10iter_avoidcircle_parseout_chgformat.txt";
 		ts.RewriteFile(beanfile, goldfileString, beanfilenew);
 		System.out.println("Done.");
 	}

@@ -12,13 +12,13 @@ import java.util.Random;
 public class Extract100SentenceFromWSJ {
 	Map<Integer,String> instmap=new HashMap<Integer,String>();
 	private int sentnum;
-	public void Extract(String writefile, int Sentencenum) throws IOException{
+	public void Extract(String writefile, int count) throws IOException{
 		File out=new File(writefile);
 		if(!out.exists()){
 			out.createNewFile();
 		}
 		FileWriter writer=new FileWriter(out);
-		int count=100;
+		
 		Random random=new Random();
 		while(count!=0){
 			int rand=random.nextInt(sentnum)+1;
@@ -58,9 +58,14 @@ public class Extract100SentenceFromWSJ {
 	public static void main(String args[]) throws IOException{
 		//String wsjfileString="wsj_2-21_malt_processindex_new.txt";
 		//String writefileString="wsj_rand100_processindex_new.txt";
-		String wsjfileString="wsj_2-21.conll";
+		//String wsjfileString="wsj_2-21.conll";
+		String wsjfileString="wsj_2-21_malt_processindex_new.txt";
 		String writefileString="wsj_first1000in2-21.txt";
-		Extract100SentenceFromWSJ test=new Extract100SentenceFromWSJ(System.getenv("CODEDATA")+File.separator+wsjfileString);
-		test.ExtractFirstNSentence(System.getenv("CODEDATA")+File.separator+writefileString, 1000);
+		String writefilerand200="wsj_2-21_rand200_forprocessindextrain.txt";
+		String writefilerand100="wsj_2-21_rand100_forprocessindextest.txt";
+		Extract100SentenceFromWSJ test=new Extract100SentenceFromWSJ(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+wsjfileString);
+		//test.ExtractFirstNSentence(System.getenv("CODEDATA")+File.separator+writefileString, 1000);
+		test.Extract(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+writefilerand100, 100);
+		test.Extract(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+writefilerand200, 200);
 	}
 }

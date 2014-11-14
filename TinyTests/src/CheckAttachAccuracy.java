@@ -40,7 +40,8 @@ public class CheckAttachAccuracy {
 		//String goldfileString=System.getenv("CODEDATA")+File.separator+"wsj_rand100_processindex.txt";
 		//String goldfileString=System.getenv("CODEDATA")+File.separator+"wsj_00_malt_processindex.txt";
 		//String goldfileString=System.getenv("CODEDATA")+File.separator+"wsj_2-21.conll";
-		String goldfileString=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00_01.conll";
+		//String goldfileString=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00_01.conll";
+		String goldfileString=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand100_forprocessindextest.conll";
 		CheckAttachAccuracy ca=new CheckAttachAccuracy();
 		/*
 		String mstfileString=System.getenv("CODEDATA")+File.separator+"mst_rand100_mstout.txt";
@@ -67,9 +68,9 @@ public class CheckAttachAccuracy {
 //		ca.PrintAccuracy(goldfileString, iter3);
 		
 		//String iter5=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"mst_51"+File.separator+"mst_2order_mst2-21_nonproj_iter10_51_parseout.txt";
-		String iter5=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"bean_wsj_2-21_10iter_avoidcircle_parseout.txt";
+		String iter5=System.getenv("CODEDATA")+File.separator+"bean_wsj_200_10iter_avoidcircle_randprocessindex_parseout.txt";
 		
-		System.out.println("=====================bean_wsj_2-21_10iter_avoidcircle_parseout");
+		System.out.println("=====================bean_wsj_200_10iter_avoidcircle_randprocessindex_parseout");
 		ca.PrintAccuracy(goldfileString, iter5);
 		/*
 		String iter7=System.getenv("CODEDATA")+File.separator+"rand100_traintest_7iter.txt";

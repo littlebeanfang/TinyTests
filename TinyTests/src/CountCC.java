@@ -196,14 +196,14 @@ public class CountCC {
 		System.out.print("For a100: ");
 		test.RightToWrong("jack\\a.test.100.wsj-00.conll", "jack\\a.baseline.out.txt", "jack\\a.ngram.out.txt");
 		*/
-		String goldfileString=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00_01.conll";
+		String goldfileString=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00-01.conll";
 		//String parse1String=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"mst_51"+File.separator+"mst_2order_wsj2-21_proj_iter10_51_parseout.txt";
 		String parse1String=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"malt_eng_wsj2-21_00-01test.conll";
 		String parse2String=System.getenv("CODEDATA")+File.separator+"BeanParserV1Test"+File.separator+"bean_wsj_2-21_10iter_parseout.txt";
-		System.out.println("MST V.S Bean:");
-		System.out.println("sentence right to wrong after change feature:");
+		System.out.println("1. Malt V.S  2. Bean:");
+		System.out.println("1 right 2 wrong :");
 		test.RightToWrong(goldfileString, parse1String, parse2String);
-		System.out.println("\nsentence wrong to right after change feature:");
+		System.out.println("\n1. wrong 2 right :");
 		test.WrongToRight(goldfileString, parse1String, parse2String);
 	}
 }
