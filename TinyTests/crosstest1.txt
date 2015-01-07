@@ -1,0 +1,10 @@
+1	Og	_	CC	CC	_	0	ROOT	_	_	9
+2	d¨¦n	_	PD	PD	_	8	dobj	_	_	5
+3	ros	_	NC	NC	_	2	nobj	_	_	1
+4	skal	_	VA	VA	_	1	conj	_	_	7
+5	det	_	PD	PD	_	4	subj	_	_	4
+6	kinesiske	_	AN	AN	_	5	mod	_	_	2
+7	publikum	_	NC	NC	_	5	nobj	_	_	3
+8	ha'	_	VA	VA	_	4	vobj	_	_	6
+9	.	_	XP	XP	_	1	pnct	_	_	8
+

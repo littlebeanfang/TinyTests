@@ -28,8 +28,8 @@ public class RewriteProcesIndexFile {
 		writer.close();
 	}
 	public static void main(String args[]) throws IOException{
-		String indexfileString=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand100_forprocessindextest.txt";
-		String rewritefile=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand100_forprocessindextest.conll";
+		String indexfileString=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand200_forprocessindextest_2.txt";
+		String rewritefile=System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand200_forprocessindextest_2.conll";
 		RewriteProcesIndexFile test=new RewriteProcesIndexFile();
 		test.Rewrite(indexfileString, rewritefile);
 	}

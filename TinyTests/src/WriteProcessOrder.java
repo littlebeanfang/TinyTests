@@ -82,6 +82,7 @@ public class WriteProcessOrder {
 		//WriteProcessOrder wpo=new WriteProcessOrder();
 		//wpo.GetRandOrder(10);
 		//wpo.GetIncOrder(10);
+		/*
 		WriteProcessOrder wpo1=new WriteProcessOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand100_forprocessindextest_randprocessindex.txt");
 		wpo1.WriteOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand100_forprocessindextest.conll",true);
 		WriteProcessOrder wpo2=new WriteProcessOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand200_forprocessindextrain_randprocessindex.txt");
@@ -90,5 +91,16 @@ public class WriteProcessOrder {
 		wpo3.WriteOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand100_forprocessindextest.conll",false);
 		WriteProcessOrder wpo4=new WriteProcessOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand200_forprocessindextrain_incprocessindex.txt");
 		wpo4.WriteOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_2-21_rand200_forprocessindextrain.conll",false);
+		*/
+		WriteProcessOrder wpo2=new WriteProcessOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_24_randorder.txt");
+		wpo2.WriteOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_24.conll",true);
+		WriteProcessOrder wpo3=new WriteProcessOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_24_increaseorder.txt");
+		wpo3.WriteOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_24.conll",false);
+		/*
+		WriteProcessOrder wpo4=new WriteProcessOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00-01_randorder.txt");
+		wpo4.WriteOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00-01.conll",true);
+		WriteProcessOrder wpo5=new WriteProcessOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00-01_increaseorder.txt");
+		wpo5.WriteOrder(System.getenv("CODEDATA")+File.separator+"WSJ"+File.separator+"wsj_00-01.conll",false);
+		*/
 	}
 }
